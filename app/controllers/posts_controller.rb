@@ -1,7 +1,6 @@
 class PostsController < ApplicationController
 
     def index
-      # type = params[:type]
       @posts = Post.all.where(post_category: params[:post_category])
     end
 
@@ -29,14 +28,17 @@ class PostsController < ApplicationController
 
     def update
       Post.update(params[:id],
-        name: params[:Post][:name]
+        title: params[:post][:title],
+        image: params[:post][:image],
+        content: params[:post][:content],
+        post_category: params[:post][:post_category]
         )
-      redirect_to "/Posts/"+params[:id]
+      redirect_to "/posts/"+params[:id]
     end
 
     def destroy
-      Post.desroy(params[:id])
-      redirect_to "/Posts"
+      Post.destroy(params[:id])
+      redirect_to "/"
     end
 
 end

@@ -31,7 +31,7 @@ class UsersController < ApplicationController
     end
 
     def destroy
-      User.desroy(params[:id])
+      User.destroy(params[:id])
       redirect_to "/Users"
     end
 

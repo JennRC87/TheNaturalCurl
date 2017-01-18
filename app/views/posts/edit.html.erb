@@ -1,4 +1,5 @@
-<%= form_for :rock, method: 'patch', url: {action: 'update'} do |p| %>
+<%= form_for :post, method: 'patch', url: {action: 'update'} do |p| %>
+
 <%= label(:post, :title) %><br>
 <%= p.text_field :title %><br>
 <%= label(:post, :image) %><br>
@@ -6,7 +7,13 @@
 <%= label(:post, :content) %><br>
 <%= p.text_field :content %><br>
 <%= label(:post, :post_category) %><br>
-<%= p.select(:post_category, options_for_select([['Washing', 'washing'], ['Add Moisture', 'add_moisture'], ['Drying', 'drying'], ['Cutting', 'cutting'],['Styling', 'styling'],['Products', 'products']])) %><br>
+<%= p.select(:post_category, options_for_select([['Washing', 'washing'], ['Add Moisture', 'add_moisture'], ['Drying', 'drying'], ['Cutting', 'cutting'],['Styling', 'styling'],['Products', 'products']], @post[:post_category])) %><br>
 <%= p.submit "Save Posts" %>
+
 <% end %>
+
+<!-- thanks to steve klein http://stackoverflow.com/questions/29955512/deleting-posts-questions-in-rails you are awesome-->
+ <button><%= link_to "Delete", @post, method: :delete,
+                                   data: { confirm: "Are you sure?" } %></button>
+
 
