@@ -1,0 +1,9 @@
+<% @posts.each do |post| %>
+<li class="postLI">
+
+<a href="/posts/<%= post[:id] %>"><h2><%= post[:title] %></h2></a><br>
+<img class="catImage" src="<%= post[:image] %>"><br>
+
+</li>
+<% end %>
+

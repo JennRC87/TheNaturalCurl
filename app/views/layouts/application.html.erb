@@ -6,9 +6,31 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
 
-  <body>
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Righteous" rel="stylesheet">
+<header>
+ <h1><a href="/" title="">The Natural Curl</a></h1>
+  <ul class="liStyle">
+   <li class="dropDown">
+        Hair Care
+       <div class="dropDownContent">
+        <a href="/posts?post_category=washing" title="">Washing</a><hr>
+        <a href="/posts?post_category=add_moisture" title="">Adding Moisture</a><hr>
+        <a href="/posts?post_category=drying" title="">Drying</a><hr>
+        <a href="/posts?post_category=cutting" title="">Cutting</a>
+       </div>
+   </li>
+    <li><a href="/posts?post_category=styling" title="">Styling</a></li>
+    <li><a href="/posts?post_category=products" title="">Products</a></li>
+    <li><a href="/posts?post_category=inspirations" title="">Inspirations</a></li>
+    <!-- <li><a href="/posts?post_category=forum" title="">Forum</a></li> -->
+  </ul>
+</header>
+
     <%= yield %>
+
+<footer>
+  <p>Made with <span class="heart"> &hearts; </span>by JRC</p>
+</footer>
   </body>
 </html>
