@@ -197,9 +197,10 @@ input, select{
   margin-bottom: 13px;
 }
 
-input#post_content{
+textarea#post_content{
   height: 350px;
   width: 650px;
+  padding: 8px;
 }
 
 // NOT WORKING FIC INPUT FIELD SO THAT IT CAN NOT JUST BE IN THE MIDDLE OF THE FIELD
