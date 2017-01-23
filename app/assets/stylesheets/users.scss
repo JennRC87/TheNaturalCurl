@@ -184,7 +184,25 @@ h4{
   border:  #59027F solid 1.5px;
 }
 
-.newcontent{
-  height: 500px;
-  width: 500px
+// .newcontent{
+//   height: 500px;
+//   width: 500px
+// }
+
+form{
+  margin: 50px 0px 0px 72px;
 }
+
+input, select{
+  margin-bottom: 13px;
+}
+
+input#post_content{
+  height: 350px;
+  width: 650px;
+}
+
+// NOT WORKING FIC INPUT FIELD SO THAT IT CAN NOT JUST BE IN THE MIDDLE OF THE FIELD
+// form label{
+//   margin-bottom: 23px;
+// }
