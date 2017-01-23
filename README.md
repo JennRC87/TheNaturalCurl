@@ -17,6 +17,7 @@ As a person who uses relaxers, I want to know what the natural hair community is
 <img src="/app/assets/images/wireframe.JPG" width="550"/>
 
 Hurtles: YouTube API
+         YouTube player showing up on heroku
 
 I plan on using user authentication in the future so that nobody can edit the post, but me.
 I also want to make a chat room to make the site interactive for users.
