@@ -17,6 +17,7 @@
 
 
 
+//   gapi.client.setApiKey("AIzaSyAE_zDPpgXEIbcS4NJO91NFMccZ3w7RJs0");
 
 
 
@@ -74,3 +75,14 @@ function onSearchResponse(response) {
     console.log(response)
 }
 
+
+$(function() {
+    $("#text_area").keypress(function (e) {
+        if(e.which == 13) {
+            //submit form via ajax, this is not JS but server side scripting so not showing here
+            $("#text_area").append($(this).val() + "<br/>");
+            $(this).val("");
+            e.preventDefault();
+        }
+    });
+});

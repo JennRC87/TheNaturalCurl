@@ -5,9 +5,10 @@
 <%= label(:post, :image) %><br>
 <%= p.text_field :image %><br>
 <%= label(:post, :content) %><br>
-<%= p.text_field :content %><br>
+<%= p.text_area :content %><br>
 <%= label(:post, :post_category) %><br>
-<%= p.select(:post_category, options_for_select([['Washing', 'washing'], ['Add Moisture', 'add_moisture'], ['Drying', 'drying'], ['Cutting', 'cutting'],['Styling', 'styling'],['Products', 'products'],['Facts', 'facts']], @post[:post_category])) %><br>
+<%= p.select(:post_category, options_for_select([['Washing', 'washing'], ['Add Moisture', 'add_moisture'], ['Drying', 'drying'], ['Cutting', 'cutting'],['Styling', 'styling'],['Products', 'products'],['TLC', 'tlc
+  ']], @post[:post_category])) %><br>
 <%= p.submit "Save Posts" %>
 
 <% end %>

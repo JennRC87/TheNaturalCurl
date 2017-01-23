@@ -6,6 +6,7 @@ body{
   background-repeat: no-repeat;
   background-position: right top;
   background-attachment: fixed;
+  height: 100%;
 }
 
 h1 a{
@@ -198,7 +199,7 @@ input, select{
 }
 
 textarea#post_content{
-  height: 350px;
+  height: 200px;
   width: 650px;
   padding: 8px;
 }
