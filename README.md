@@ -22,3 +22,4 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+<img src="app/assets/images/The_Natural_Curl.png" width="350"/>

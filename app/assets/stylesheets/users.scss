@@ -5,22 +5,28 @@ body{
   background-image: url("http://i.imgur.com/9ogCu3T.jpg");
   background-repeat: no-repeat;
   background-position: right top;
+  background-attachment: fixed;
 }
 
 h1 a{
   font-family: 'Righteous', cursive;
   color: #59027F;
   text-align: left;
-  font-size: 45px;
+  font-size: 40px;
   margin: 20px 0 0 30px;
+}
+
+h1{
+  margin: 0;
 }
 
 .liStyle{
   font-size: 15px;
 }
 
-li, footer, p, h2{
-    font-family: 'Raleway', sans-serif;
+li, footer, a, p, h2, h3, h4, input{
+  font-family: 'Raleway', sans-serif;
+  color: #59027F;
 }
 
 .post li{
@@ -33,19 +39,20 @@ li{
 
 .liStyle li{
   display: inline-block;
-  margin:0 50px 0 0;
+  margin:0 40px 0 0;
   text-align: center;
 }
 
 ul{
   text-align: left;
+  margin: 16px 0px 0px 0px;
 }
 
 a{
   text-decoration: none;
-  color: #59027F;
 }
 
+// thanks Marcos for helping with this dropdown menu...you are awesome!!!
 li.dropDown{
   color: #59027F;
 }
@@ -82,14 +89,21 @@ li.dropDown{
 }
 
 footer{
-  position: absolute;
+  height: 38px;
+  position: fixed;
+  width: 66%;
   text-align: center;
   bottom: 0;
-  width: 100%;
+  margin: 0px;
+  background-color: #fff;
+}
+
+.pfooter{
+  font-size: 10px;
 }
 
 .indexP{
-  margin: 70px 440px 0 30px;
+  margin: 40px 440px 0 30px;
 }
 
 .heart{
@@ -97,11 +111,74 @@ footer{
 }
 
 .catImage{
-  width: 100px;
+  width: 200px;
 }
 
 hr{
   color: #F7F7F7;
   border-style: solid;
   border-width: .5px;
+}
+
+.displayPost{
+  margin: 50px 0px -50px 72px;
+
+}
+
+h2{
+  font-size: 20px;
+}
+
+.logo img{
+ width: 15px;
+ color: black;
+}
+
+img.postImage{
+  width: 500px;
+  margin-bottom: 23px;
+}
+
+.postLI{
+  margin: 0px 488px 0px 0px;
+}
+
+h3{
+  margin: 50px 0px 20px 72px;
+  font-size: 20px;
+}
+
+iframe{
+  margin: 10px 0px 0px 72px;
+  // position: fixed;
+  // top: 50%;
+  // left: 50%;
+  // transform: translate(-50%,-25%);
+}
+
+.YouTubeSearch{
+  margin: 0px 0px 30px 72px;
+}
+
+input[type=text]{
+    padding: 3px 5px;
+    color: #59027F;
+}
+
+input[type=submit]{
+    padding: 5px;
+    color: #59027F;
+}
+
+h4{
+  font-size: 17px;
+  margin: 0px 45px 20px 0px;
+}
+
+.giphy-embed{
+  // position: fixed;
+  // left: 27%;
+  // transform: translate(-50%);
+  margin-left: 185px;
+  border:  #59027F solid 1.5px;
 }

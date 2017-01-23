@@ -1,11 +1,13 @@
-<li class="postLI">
+<div class="displayPost">
 
-<h2><%= @post[:title] %></h2></a><br>
-<p><%= @post[:created_at] %></p><br>
-<img class="postImage" src="<%= @post[:image] %>"><br>
-<p><%= @post[:content] %></p><br>
+  <li class="postLI">
+
+    <h2><%= @post[:title] %></h2></a><br>
+    <p><%= @post[:created_at] %></p><br>
+    <img class="postImage" src="<%= @post[:image] %>"><br>
+    <p class="showpost"><%= @post[:content] %></p><br>
 
 
+  </li>
 
-</li>
-
+</div>
